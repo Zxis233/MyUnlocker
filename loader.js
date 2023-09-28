@@ -19,7 +19,7 @@
         return m && Number(m[1]) < 45;
     })();
     if (detected) {
-        document.getElementById('loader-tips-outdated').hidden = false;
+        document.getElementById("loader-tips-outdated").hidden = false;
         document.getElementById("loader-tips-timeout").hidden = false;
     }
 })();

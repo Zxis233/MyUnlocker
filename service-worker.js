@@ -11,13 +11,13 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
-
 importScripts(
-  "precache-manifest.7a01b07a3cfb36c105c4a4c905cf0b0d.js"
+  "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "unlock-music"});
+importScripts("precache-manifest.7a01b07a3cfb36c105c4a4c905cf0b0d.js");
+
+workbox.core.setCacheNameDetails({ prefix: "unlock-music" });
 
 workbox.core.skipWaiting();
 
